@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Basic Core Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. End the Program");
+            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. End the Program");
             while (end)
             {
                 Console.WriteLine("Take an option to execute");
@@ -21,6 +21,10 @@ namespace BasicCoreProgram
                     case 2:
                         LeapYear leap = new LeapYear();
                         leap.year();
+                        break;
+                    case 3:
+                        PowerOf2 Power = new PowerOf2();
+                        Power.TwoPower();
                         break;
                     default:
                         Console.WriteLine("Enter Proper Option To Execute");
