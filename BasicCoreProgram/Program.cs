@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Basic Core Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5.End the Program");
+            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5. Prime Factor \n6.End the Program");
             while (end)
             {
                 Console.WriteLine("Take an option to execute");
@@ -29,6 +29,10 @@ namespace BasicCoreProgram
                     case 4:
                         HarmonicNumber number = new HarmonicNumber();
                         number.harmonic();
+                        break;
+                    case 5:
+                        PrimeFactor primeFactor = new PrimeFactor();
+                        primeFactor.factor();
                         break;
                     default:
                         Console.WriteLine("Enter Proper Option To Execute");
