@@ -7,11 +7,12 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Basic Core Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5. Prime Factor \n6.Quotient And Reminder \n7. Swap a Number \n8.Even Or Odd \n9. Vowel and Consonant \n10.End the Program");
+            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5. Prime Factor \n6.Quotient And Reminder \n7. Swap a Number \n8.Even Or Odd \n9. Vowel and Consonant \n10.Largest Of Three \n11.End the Program");
             while (end)
             {
                 Console.WriteLine("Take an option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
+                
                 switch (option)
                 {
                     case 1:
@@ -49,6 +50,10 @@ namespace BasicCoreProgram
                     case 9:
                         VowelAndConsonant vowelAndConsonant = new VowelAndConsonant();  
                         vowelAndConsonant.alphabet();
+                        break;
+                    case 10:
+                        LargestOf3 largestOf3 = new LargestOf3();
+                        largestOf3.largest();
                         break;
                     default:
                         Console.WriteLine("Enter Proper Option To Execute");
