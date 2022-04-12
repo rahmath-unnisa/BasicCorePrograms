@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Basic Core Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5. Prime Factor \n6.Quotient And Reminder \n7. End the Program");
+            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5. Prime Factor \n6.Quotient And Reminder \n7. Swap a Number \n8.End the Program");
             while (end)
             {
                 Console.WriteLine("Take an option to execute");
@@ -37,6 +37,10 @@ namespace BasicCoreProgram
                     case 6:
                         QuotientReminder quotientReminder = new QuotientReminder();
                         quotientReminder.qrprogram();
+                        break;
+                    case 7:
+                        Swapping swapping = new Swapping();
+                        swapping.swap();
                         break;
                    
                     default:
