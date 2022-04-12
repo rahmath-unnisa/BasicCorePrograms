@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Basic Core Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5. Prime Factor \n6.Quotient And Reminder \n7. Swap a Number \n8.Even Or Odd \n9. End the Program");
+            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5. Prime Factor \n6.Quotient And Reminder \n7. Swap a Number \n8.Even Or Odd \n9. Vowel and Consonant \n10.End the Program");
             while (end)
             {
                 Console.WriteLine("Take an option to execute");
@@ -46,7 +46,10 @@ namespace BasicCoreProgram
                         EvenOrOdd even = new EvenOrOdd();
                         even.EvenOdd();
                         break;
-                   
+                    case 9:
+                        VowelAndConsonant vowelAndConsonant = new VowelAndConsonant();  
+                        vowelAndConsonant.alphabet();
+                        break;
                     default:
                         Console.WriteLine("Enter Proper Option To Execute");
                         break;
