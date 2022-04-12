@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Basic Core Programs");
             bool end = true;
-            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. End the Program");
+            Console.WriteLine("1. FlipCoin\n2. Leap Year \n3. Power Of Two \n4. Harmonic Number \n5.End the Program");
             while (end)
             {
                 Console.WriteLine("Take an option to execute");
@@ -25,6 +25,10 @@ namespace BasicCoreProgram
                     case 3:
                         PowerOf2 Power = new PowerOf2();
                         Power.TwoPower();
+                        break;
+                    case 4:
+                        HarmonicNumber number = new HarmonicNumber();
+                        number.harmonic();
                         break;
                     default:
                         Console.WriteLine("Enter Proper Option To Execute");
